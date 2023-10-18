@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navebar {
+  background-color: rgba(0, 0, 0, 0.822);
+  min-width: 100%;
+  min-height: 70%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.navebar .logo,
+.navlist,
+.contact {
+  width: 80%;
+  display: flex;
+  padding: 20px;
+}
+
+.logo {
+  font-family: "poppins";
+  font-size: 40px;
+  cursor: pointer;
+}
+.logo span {
+  color: red;
+}
+
+::selection,
+span::selection {
+  background-color: transparent;
+}
+.navlist li,
+a {
+  color: white;
+  font-size: 13px;
+  font-family: "poppins";
+  text-decoration: none;
+  list-style: none;
+  margin: 10px;
+  transition: color 0.3s;
+}
+.navlist li a:hover {
+  color: rgb(255, 0, 0);
+}
+.contact-btn {
+  border: none;
+  outline: none;
+  background-color: rgb(255, 17, 0);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-family: verdana;
+  transition: background 0.3s;
+}
+.contact-btn:hover {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.navlist,
+.contact {
+  justify-content: flex-end;
+}
+
+.text-box {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50% -50%);
+}
+.text-box h1 {
+  font-size: 40px;
+  font-family: "poppings";
+}
+#search-bar {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
+  padding-left: 1em;
+  margin-right: 80px;
+  margin-top: 2em;
+  float: left;
+}
+#search-btn {
+  border: none;
+  outline: none;
+  background-color: rgb(255, 17, 0);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-family: verdana;
+  transition: background 0.3s;
+  float: right;
+}
+#search-btn:hover {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
